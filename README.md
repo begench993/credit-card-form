@@ -1,5 +1,5 @@
 # credit-card-form
-Credi cart format , mask input and validetor. Vanilla js.
+Credi cart format , mask input and validator. Vanilla js.
 
 ## Features
 
