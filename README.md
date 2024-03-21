@@ -2,7 +2,7 @@
 Credi cart format , mask input and validator. Vanilla js.
 ## DEMO
 
-[Try it]([https://rawcdn.githack.com/begench993/credit-card-form/main/index.html](https://htmlpreview.github.io/?https://github.com/begench993/credit-card-form/blob/main/index.html)).
+[Try it](https://htmlpreview.github.io/?https://github.com/begench993/credit-card-form/blob/main/index.html).
 
 ## Features
 
