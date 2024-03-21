@@ -1,5 +1,8 @@
 # credit-card-form
 Credi cart format , mask input and validator. Vanilla js.
+## DEMO
+
+[Try it]([https://braintree.github.io/restricted-input/](https://rawcdn.githack.com/begench993/credit-card-form/main/index.html)).
 
 ## Features
 
