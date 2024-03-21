@@ -221,31 +221,31 @@
         const Month=d.getMonth();
         const dataYear=parseInt(Expiration.year);
         const datamonth=parseInt(Expiration.month);
-        if (dataYear>=fullYear){
-            if (fullYear===dataYear){
-                if (datamonth>=Month){
+
+        if (datamonth<=12){
+            if (dataYear>=fullYear){
+                if (fullYear===dataYear){
+                    if (datamonth>=Month){
+                        event.target.classList.add(Configuration.validClass);
+                        event.target.classList.remove(Configuration.invalidClass);
+                    }
+                }else if(dataYear>fullYear){
                     event.target.classList.add(Configuration.validClass);
                     event.target.classList.remove(Configuration.invalidClass);
                 }
-            }else if(dataYear>fullYear){
-                if (datamonth<=12){
-                    event.target.classList.add(Configuration.validClass);
-                    event.target.classList.remove(Configuration.invalidClass);
-                }
-            }
-        }else if (dataYear>=Year&&Expiration.year.length==2){
-            if (Year===dataYear){
-                if (datamonth>=Month){
-                    event.target.classList.add(Configuration.validClass);
-                    event.target.classList.remove(Configuration.invalidClass);
-                }
-            }else if(dataYear>Year){
-                if (datamonth<=12){
+            }else if (dataYear>=Year&&Expiration.year.length==2){
+                if (Year===dataYear){
+                    if (datamonth>=Month){
+                        event.target.classList.add(Configuration.validClass);
+                        event.target.classList.remove(Configuration.invalidClass);
+                    }
+                }else if(dataYear>Year){
                     event.target.classList.add(Configuration.validClass);
                     event.target.classList.remove(Configuration.invalidClass);
                 }
             }
         }
+        
         if (val.length>2){
             event.target.value=Expiration.month+'/'+Expiration.year
         }else{
